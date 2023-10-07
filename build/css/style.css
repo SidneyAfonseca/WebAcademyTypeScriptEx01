@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #303030;
+}
+
+.label-title { grid-area: labelTitle; }
+.input-title { grid-area: title; }
+.label-description { grid-area: labelDescription; }
+.input-description { grid-area: description; }
+.label-due-date { grid-area: labelDueDate; }
+.input-due-date { grid-area: dueDate; }
+.button-add {grid-area: button}
+
+.new-item-form {
+    display: grid;
+    grid-template-areas:
+    'labelTitle title title labelDueDate dueDate dueDate' 
+    'labelDescription description description description description description'
+    'button button button button button button';
+    gap: 0.8em;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-check{
+    background-color:green;
+}
+
+.button-edit{
+    background-color: yellow;
+}
+
+.button-remove{
+    background-color: red;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+

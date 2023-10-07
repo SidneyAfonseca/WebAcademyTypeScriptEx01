@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./build/css/style.css">
+    <title>Lembrete</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista (Lembrete)To-Do-List</h1>
+        <section class="new-item-container">
+            <form class="new-item-form">
+                <label class="label-title" for="tile">Título:</label>
+                <input class="input-title" type="text" id="title" placeholder="Título" />
+                <label class="label-description"for="description">Descrição:</label>
+                <input class="input-description" type="text" id="description" placeholder="Descrição" />
+                <label class="label-due-date"for="dueDate">Data Limite:</label>
+                <input class="input-due-date" type="date" id="dueDate" />
+                <button class="button-add" id="addBtn">Adicionar</button>
+            </form>
+        </section>
+        <section class="task-list-container">
+        <ul id="taskList"></ul>
+        </section>
+    </div>
+    <script src="./build/js/main.js"></script>
+</body>
+</html>
